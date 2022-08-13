@@ -80,5 +80,6 @@ class State(Enum):
     WI = 'WI'
     WY = 'WY'
 
+    @classmethod
     def choices(cls):
         return [(choice.name, choice.value) for choice in cls]

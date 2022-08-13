@@ -27,7 +27,6 @@ class ShowForm(Form):
 
 class VenueForm(Form):
     def validate(self):
-        """Define a custom validate method in your Form:"""
         rv = Form.validate(self)
         if not rv:
             return False
@@ -109,6 +108,7 @@ class VenueForm(Form):
     )
     phone = StringField(
         'phone',
+
     )
     image_link = StringField(
         'image_link'
@@ -154,7 +154,6 @@ class VenueForm(Form):
 
 class ArtistForm(Form):
     def validate(self):
-        """Define a custom validate method in your Form:"""
         rv = Form.validate(self)
         if not rv:
             return False
